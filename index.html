@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hidden Costs of "Innovative" Design</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- 🟢 Header & Sticky Navigation -->
+  <header>
+    <h1>Hidden Costs of "Innovative" Design</h1>
+    <p id="subtitle">
+      Exploring how touch-free water dispenser interfaces affect user
+      experiences
+    </p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#background">Background</a></li>
+      <li><a href="#interviews">Interviews</a></li>
+      <li><a href="#personas">Personas</a></li>
+      <li><a href="#storyboard">Storyboard</a></li>
+      <li><a href="#reflection">Reflection</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🟢 Background Section -->
+  <section id="background">
+    <h2>Background: Quench Water Dispenser</h2>
+
+    <p>
+      The Data Science Initiative (DSI) at Brown University previously used a
+      water dispenser that lacked durability and was prone to leakage. To
+      address these issues, the staff replaced it with a new Quench water
+      dispenser, designed to be more reliable and touch-free for improved
+      hygiene and ease of use. The Quench dispenser offers four water
+      options—cold, ambient, sparkling, and hot. Instead of physical buttons,
+      users hover their hand over sensors to toggle between selections and
+      dispense water.
+    </p>
+
+    <figure class="centered-figure">
+      <img src="images/interface-sketch.png" width="750" class="centered-img"
+        alt="An animated example of a dropdown menu navigating sports categories, with options like 'Football,' 'Basketball,' and 'Tennis' being highlighted and selected." />
+      <figcaption>
+        This interface provides efficient access to clean drinking water with
+        multiple options (cold, sparkling, ambient, and hot). The touch-free
+        hover controls reduce the spread of germs, while the mode
+        selector provides flexibility for different water preferences.
+        However, some users struggle with the lack of pressable buttons, as
+        the hover-based controls are not immediately intuitive and may confuse
+        first-time users.
+      </figcaption>
+    </figure>
+
+    <p>
+      While this upgrade aimed to enhance functionality and hygiene, our study
+      reveals that it may have introduced usability challenges for beginner
+      and rushed users. This project examines how people interact with the new
+      interface though interviews, personas, and a storymap documenting user
+      experiences.
+    </p>
+  </section>
+
+  <!-- 🟢 Interview Section -->
+  <section id="interviews">
+    <h2>Interviews</h2>
+    <p>
+      We conducted interviews with several participants (more than three) to
+      understand their experiences with the Quench water dispenser. Here are
+      some key insights that capture the general patterns we noticed:
+    </p>
+
+    <ul>
+      <li>
+        <strong>Approach:</strong>
+        <ul>
+          <li>
+            Users began by placing their bottle on the tray, most did so
+            without even pausing to read instructions.
+          </li>
+          <li>
+            Some took a few seconds to read the instructions and scan the
+            available options (<strong>cold, sparkling, ambient, hot</strong>)
+            before proceeding.
+          </li>
+          <li>
+            Users with people waiting behind them tended to act more quickly.
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>Mode Selection:</strong>
+        <ul>
+          <li>
+            Most users did not need to change the setting, as
+            <strong>cold water</strong> was most popular and set as default.
+          </li>
+          <li>
+            Some users hovered their <strong>front hand</strong> over the mode
+            selector to toggle between the options, while others used their
+            <strong>back hand</strong>. Some even unnecessarily touched the
+            button directly, which would sometimes not trigger any interface
+            response depending on the location touched and would often require
+            multiple attempts.
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>Dispensing Process:</strong>
+        <ul>
+          <li>
+            Similar to the mode selector, users interacted with the dispensing
+            button in various ways. Some hovered their
+            <strong>front hand</strong>, others used their
+            <strong>back hand</strong>, and some directly touched it.
+          </li>
+          <li>
+            Some users actively watched the water as it filled their bottle,
+            while others checked their phone while waiting, occasionally
+            glancing at the bottle.
+          </li>
+          <li>
+            Some users misaligned their bottle at first and adjusted it so
+            water stopped hitting the tray.
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>Exit Behavior:</strong>
+        <ul>
+          <li>
+            Some users lingered briefly to wipe the spout before leaving.
+          </li>
+          <li>
+            Others left immediately after collecting their water, without any
+            additional interaction.
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p>
+      We also asked each of our subjects questions to better understand their
+      experiences with the Quench water dispenser. Here is a summary of the
+      responses we recieved:
+    </p>
+    <ol>
+      <li><strong>How often do you use this dispenser? Why did you choose this one over another option?</strong>
+        <ul>
+          <li>Frequent users (e.g., three times a day) relied on it for convenience, especially those who worked or
+            studied nearby. They appreciated that it was <strong>free and easily accessible</strong>.</li>
+          <li>Occasional users (e.g., once a week) and new users used it when visiting the DSI or simply when they got
+            thirsty.</li>
+          <li>Some preferred it over other options for its <strong>faster dispensing</strong> and additional water
+            settings (<strong>sparkling, ambient, hot</strong>).</li>
+          <li>A few previously used the adjacent filtered water station but switched to this dispenser for its
+            <strong>faster flow and cold water option</strong>.
+          </li>
+          <li>Others valued the <strong>touch-free hover feature</strong>, considering it <strong>more hygienic</strong>
+            than physical button dispensers.</li>
+        </ul>
+      </li>
+
+      <li><strong>What features did you expect to see on the interface before using it?</strong>
+        <ul>
+          <li>Most users expected basic water options like <strong>cold and hot</strong>.</li>
+          <li>Some were surprised to find a <strong>sparkling water and ambient water</strong> option.</li>
+          <li>Others expected <strong>clearer, step-by-step instructions</strong>.</li>
+        </ul>
+      </li>
+
+      <li><strong>How easy or difficult was it to navigate the interface? What made it that way?</strong>
+        <ul>
+          <li>Frequent users found the interface <strong>easy and intuitive</strong>, likely because they had learned
+            the hover-based interaction over time.</li>
+          <li>New users struggled with <strong>switching modes</strong> (e.g., from cold to ambient) due to the lack of
+            <strong>clear instructions</strong>.
+          </li>
+          <li>Many assumed the mode selector and dispense buttons were <strong>meant to be pressed</strong>, leading to
+            confusion when pressing didn’t work.</li>
+          <li>Some found the buttons <strong>unresponsive at times</strong>, requiring multiple hovers for selection.
+          </li>
+        </ul>
+      </li>
+
+      <li><strong>Was there a specific water setting you were looking for, and if so, how easy was it to find and
+          select?</strong>
+        <ul>
+          <li>Most users wanted <strong>cold water</strong>, the default setting, making it easy to access.</li>
+          <li>Those preferring <strong>sparkling or ambient water</strong> took a few extra seconds to locate and switch
+            settings.</li>
+          <li>Users who preferred <strong>hot water</strong> found the hover-based toggling
+            <strong>inefficient</strong>, as it required multiple steps (<strong>cold → sparkling → ambient →
+              hot</strong>).
+          </li>
+        </ul>
+      </li>
+
+      <li><strong>Have you used a different water dispenser before? How does this one compare?</strong>
+        <ul>
+          <li>Most users had used dispensers with <strong>pressable buttons or levers</strong> rather than hover-based
+            controls.</li>
+          <li>Some found this dispenser <strong>more modern and hygienic</strong> but <strong>less intuitive</strong>
+            for first-time users.</li>
+          <li>Several users found mode selection <strong>cumbersome</strong>, preferring dispensers where settings could
+            be <strong>selected directly</strong> rather than toggled.</li>
+        </ul>
+      </li>
+
+      <li><strong>Did the dispenser meet your expectations for speed, ease of use, and hygiene? Why or why not?</strong>
+        <ul>
+          <li>Most users found it <strong>fast and convenient</strong>, as long as they knew how to switch modes.</li>
+          <li>Some liked the <strong>touch-free hover feature</strong> for hygiene.</li>
+          <li>Others felt the interface could be <strong>clearer</strong> to reduce initial confusion.</li>
+          <li>A few expressed <strong>hygiene concerns</strong>, with some wiping the spout before use.</li>
+        </ul>
+      </li>
+
+      <li><strong>If you could change one thing about the interface, what would it be?</strong>
+        <ul>
+          <li>Some suggested making the buttons <strong>more responsive with less delay</strong>.</li>
+          <li>A few recommended <strong>clearer labels</strong> (e.g., explicitly stating "hover") and a <strong>more
+              noticeable instruction panel</strong>.</li>
+          <li>Some preferred <strong>pressable buttons</strong> to make mode selection <strong>more efficient</strong>,
+            allowing them to pick a setting in <strong>one step</strong> rather than toggling through multiple options.
+          </li>
+        </ul>
+      </li>
+    </ol>
+
+  </section>
+
+  <section id="personas">
+    <h2>Personas: Confused Cameron and Holly Hustle</h2>
+    <p>
+      Based on our observations, we created two empathy maps to illustrate
+      instances of archetypal users. Such personas represent part of the spectrum of user experiences
+      with the Quench water dispenser.
+    </p>
+
+    <figure class="centered-figure">
+      <img src="images/cam-map.png" width="800" class="centered-img"
+        alt="An animated example of a dropdown menu navigating sports categories, with options like 'Football,' 'Basketball,' and 'Tennis' being highlighted and selected." />
+    </figure>
+
+    <figure class="centered-figure">
+      <img src="images/holly-map.png" width="800" class="centered-img"
+        alt="An animated example of a dropdown menu navigating sports categories, with options like 'Football,' 'Basketball,' and 'Tennis' being highlighted and selected." />
+    </figure>
+  </section>
+
+  <!-- 🟢Storyboard Section -->
+  <section id="storyboard">
+    <h2>Storyboard</h2>
+    <p>
+      Based on our "Confused Cameron" persona, we created a storyboard mapping
+      out his entire user journey with the Quench water dispenser from start
+      to end. Note that during Cameron's struggle, he fails to realize that
+      the dispenser uses touch-free hover controls, leading to confusion and
+      frustration as he tries to figure out how to toggle between modes.
+    </p>
+
+    <figure class="centered-figure">
+      <img src="images/storyboard-p1.png" width="900" class="centered-img"
+        alt="An animated example of a dropdown menu navigating sports categories, with options like 'Football,' 'Basketball,' and 'Tennis' being highlighted and selected." />
+    </figure>
+
+    <figure class="centered-figure">
+      <img src="images/storyboard-p2.png" width="900" class="centered-img"
+        alt="An animated example of a dropdown menu navigating sports categories, with options like 'Football,' 'Basketball,' and 'Tennis' being highlighted and selected." />
+    </figure>
+  </section>
+
+  <!-- 🟢 Reflection Section -->
+  <section id="reflection">
+    <h2>Reflection</h2>
+    <p>
+      In our study of the Quench water dispenser interface, we found that
+      while the touch-free hover controls provide a sleek, modern, and
+      hygienic upgrade over traditional button-operated dispensers, they
+      aren’t always easy to figure out for everyone. Using empathy mapping and
+      storyboarding, we noticed that first-time users, like "Confused
+      Cameron," often get tripped up by the lack of clear instructions. This
+      leads to accidentally switching modes or struggling to dispense water
+      correctly. On the other hand, frequent users, like "Holly Hustle," have
+      no trouble navigating the interface but feel the multi-step toggling
+      process is clunky and time-consuming, especially when they’re in a
+      hurry. To make the experience better for everyone, we suggest adding
+      direct mode selections, clearer hover cues, and more responsive
+      controls. These changes could go a long way in improving usability and
+      satisfaction.
+    </p>
+  </section>
+
+  <!-- 🟢 Footer -->
+  <footer>
+    <p>© 2025 My GitHub Page. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
